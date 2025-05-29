@@ -7,4 +7,5 @@ test('login test', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.gotoLoginPage();
     await loginPage.login('tomsmith', 'SuperSecretPassword!');
+    await page.close();
 });
